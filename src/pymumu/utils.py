@@ -22,7 +22,6 @@ class UtilsMixin:
     def _run(self,*args, allowErrors=False):
         cmd = [self.path, *[str(a) for a in args]]
         result = subprocess.run(cmd, capture_output=True, text=True)
-        print("Running:", cmd)
         if result.returncode != 0:
             if not allowErrors:
                 raise MuMuException(f"Command {' '.join(cmd)} failed: {result.stderr}")
