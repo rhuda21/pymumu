@@ -1,6 +1,6 @@
 # pymumu
 
-A Python API for controlling and managing **MuMu Player** Android emulator — inspired by [pymemuc](https://github.com/pymemuc/pymemuc).
+A Python API for controlling and managing **MuMu Player** Android emulator — inspired by [pymemuc](https://github.com/pyclashbot/pymemuc).
 
 ## Features
 
