@@ -25,6 +25,8 @@ class UtilsMixin:
         if result.returncode != 0:
             if not allowErrors:
                 raise MuMuException(f"Command {' '.join(cmd)} failed: {result.stderr}")
+        if not result.stdout or not result.stdout.strip():
+            return result.stdout
         try:
             return json.loads(result.stdout)
         except json.JSONDecodeError:
