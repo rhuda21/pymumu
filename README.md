@@ -33,7 +33,7 @@ pip install pymumu
 Or install from source:
 
 ```bash
-git clone https://github.com/yourusername/pymumu
+git clone https://github.com/rhuda21/pymumu
 cd pymumu
 pip install -e .
 ```
